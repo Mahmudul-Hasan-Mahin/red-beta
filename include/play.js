@@ -61,7 +61,7 @@ module.exports = {
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
 
     try {
-      var playingMessage = await queue.textChannel.send(`<a:BlueCheckMark:700573350627639379> Started playing: **${song.title}**\nLink: ||${song.url}||`);
+      var playingMessage = await queue.textChannel.send(`<a:BlueCheckMark:700573350627639379> Started playing: **${song.title}**`);//<a:BlueCheckMark:700573350627639379> Started playing: **${song.title}**\nLink: ||${song.url}||
       await playingMessage.react("⏭");
       await playingMessage.react("⏯");
       await playingMessage.react("🔁");
@@ -85,7 +85,7 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.connection.dispatcher.end();
-          queue.textChannel.send(`${user} ⏩ skipped the song`).catch(console.error);
+          queue.textChannel.send(`${user} <a:BlueCheckMark:700573350627639379> Skipped The Song`).catch(console.error);
           collector.stop();
           break;
 
