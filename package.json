@@ -1,14 +1,16 @@
 {
-  "name": "discord-bot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "evobot",
+  "version": "0.6.2",
+  "description": "Discord music bot built with discord.js",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "node .": "node run index.js"
+  "author": "Erit Islami <eritislami@gmail.com>",
+  "private": true,
+  "homepage": "https://github.com/eritislami/evobot",
+  "repository": "github:eritislami/evobot",
+  "bugs": "https://github.com/eritislami/evobot/issues",
+  "engines": {
+    "node": ">=12.0.0"
   },
-  "author": "Mahin",
-  "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.3.2",
     "discord.js": "^12.0.1",
@@ -18,5 +20,8 @@
     "soundcloud-downloader": "0.0.9",
     "ytdl-core": "^3.1.0",
     "ytdl-core-discord": "^1.2.1"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
