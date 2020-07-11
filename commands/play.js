@@ -99,7 +99,7 @@ module.exports = {
     if (serverQueue) {
       serverQueue.songs.push(song);
       return serverQueue.textChannel
-        .send(`✅ **${song.title}** has been added to the queue by ${message.author}`)
+        .send(`<a:BlueCheckMark:700573350627639379> Added: **${song.title}**\nRequested By: ${message.author}`)
         .catch(console.error);
     }
 

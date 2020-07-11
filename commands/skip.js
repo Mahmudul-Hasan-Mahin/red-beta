@@ -12,6 +12,6 @@ module.exports = {
 
     queue.playing = true;
     queue.connection.dispatcher.end();
-    queue.textChannel.send(`${message.author} ⏭ skipped the song`).catch(console.error);
+    queue.textChannel.send(`<a:BlueCheckMark:700573350627639379> Skipped The Song`).catch(console.error);
   }
 };
